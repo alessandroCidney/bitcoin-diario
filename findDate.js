@@ -1,5 +1,5 @@
+// Esta função apenas pega a data atual
 function findDate() {
-
 	const newDate = new Date();
 
 	const date = newDate.getDate();

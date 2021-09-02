@@ -1,10 +1,10 @@
+// Importando as bibliotecas cheerio e axios
 const cheerio = require('cheerio');
 const axios = require('axios');
 
+// Captando a cotação do Bitcoin por meio de web scraping
 async function findBitcoinValue() {
-
 	try {
-
 		const { data } = await axios.get('https://dolarhoje.com/bitcoin-hoje/');
 
 		const $ = cheerio.load(data);
